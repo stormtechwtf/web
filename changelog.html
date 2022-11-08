@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="en"><head>
+	<title>Stormtech</title>
+<meta charset="UTF-8">
+<meta name="description" content="Most advanced script for Rust.">
+<meta name="author" content="Stormtech">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta property="og:title" content="Stormtech">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://stormtech.wtf/">
+<meta property="og:description" content="Most advanced script for Rust.">
+
+
+<link href="css/swiper-bundle.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/aos.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/theme.min.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="css/pro.min.css">	</head>
+	<body class="bg-black-800 gallery-mansorny-template saas-template">
+		<style type="text/css">
+			::-webkit-scrollbar {
+			width: 3px;
+			height: 3px;
+			}
+			::-webkit-scrollbar:hover {
+			width: 6px;
+			height: 3px;
+			}
+			::-webkit-scrollbar-button {
+			width: 0px;
+			height: 0px;
+			}
+			::-webkit-scrollbar-thumb {
+			background: #e1e1e1;
+			border: 0px none #ffffff;
+			}
+			::-webkit-scrollbar-thumb:hover {
+			background: #ffffff;
+			}
+			::-webkit-scrollbar-thumb:active {
+			background: #a6a6a6;
+			}
+			::-webkit-scrollbar-track {
+			background: #4b5a68;
+			border: 1px none #ffffff;
+			}
+			::-webkit-scrollbar-track:hover {
+			background: #4b5a68;
+			}
+			::-webkit-scrollbar-track:active {
+			background: #4b5a68;
+			}
+			.btn-primary {
+			background-color: #fc2a2a!important;
+			border-color: #fc2a2a!important;
+			}
+			.btn-primary:hover {
+			background-color: #fc2a2a;
+			border-color: #fc2a2a;
+		</style>
+		<style>
+		.card {
+			border-radius: .55rem!important;
+		}
+		.badge-success {
+		background-color:#44d273;
+		}
+		.skeleton {
+			width: 1082px;
+			height: 31px;
+		}
+		.loading {
+			position: relative;
+			background-color: #2a2a2a;
+			overflow:hidden;
+		}
+		.loading::after {
+			content: '';
+			position: absolute;
+			left:0;
+			top:0;
+			width:100%;
+			height:100%;
+			transform: translateX(-100%);
+			background-image: linear-gradient( to left , transparent , #343434, transparent);
+			animation: loading 1s infinite;
+		}
+		
+		@keyframes loading {
+			100% {
+				transform: translateX(100%);
+			}
+		}
+		</style>
+		<div class="bg-black-500">
+		<header class="storm-header py-4 py-sm-5">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg" style="position:relative;z-index:100;" data-aos="fade-down" data-aos-delay="100">
+			<a class="navbar-brand" href="https://stormtech.wtf/">
+			<img src="images/og.png" width="78" alt="Stormtech">
+			</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<svg class="menu-icon" data-name="icons/tabler/hamburger" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+					<rect data-name="Icons/Tabler/Hamburger background" width="16" height="16" fill="none"/>
+					<path d="M15.314,8H.686A.661.661,0,0,1,0,7.368a.653.653,0,0,1,.593-.625l.093-.006H15.314A.661.661,0,0,1,16,7.368a.653.653,0,0,1-.593.626Zm0-6.737H.686A.661.661,0,0,1,0,.632.654.654,0,0,1,.593.005L.686,0H15.314A.661.661,0,0,1,16,.632a.653.653,0,0,1-.593.625Z" transform="translate(0 4)" fill="#ffffff"/>
+				</svg>
+				<svg class="menu-close" data-name="icons/tabler/close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+					<rect data-name="Icons/Tabler/Close background" width="16" height="16" fill="none"/>
+					<path d="M.82.1l.058.05L6,5.272,11.122.151A.514.514,0,0,1,11.9.82l-.05.058L6.728,6l5.122,5.122a.514.514,0,0,1-.67.777l-.058-.05L6,6.728.878,11.849A.514.514,0,0,1,.1,11.18l.05-.058L5.272,6,.151.878A.514.514,0,0,1,.75.057Z" transform="translate(2 2)" fill="#ffffff"/>
+				</svg>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav m-auto">
+					<li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+					<li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+					<li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+					<li class="nav-item"><a class="nav-link" href="changelog.html">Changelog</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" role="button" id="docs" data-toggle="dropdown" aria-expanded="false">
+							Corporate 
+							<svg class="ml-1" data-name="icons/tabler/chevron down" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 16 16">
+								<rect data-name="Icons/Tabler/Chevron Down background" width="16" height="16" fill="none"/>
+								<path d="M.264.26A.909.909,0,0,1,1.435.174l.1.086,7.2,7.111a.881.881,0,0,1,.087,1.157l-.087.1-7.2,7.111a.908.908,0,0,1-1.273,0,.881.881,0,0,1-.087-1.157l.087-.1L6.827,8,.264,1.517A.881.881,0,0,1,.176.36Z" transform="translate(16 4) rotate(90)" fill="#ffffff"/>
+							</svg>
+						</a>
+						<ul class="dropdown-menu shadow-lg" aria-labelledby="docs">
+							<li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+							<li><a class="dropdown-item" href="tos.html">Terms Of Service</a></li>
+						</ul>
+					</li>
+				</ul>
+				<a href="#pricing" class="btn btn-lg btn-danger my-3 my-lg-0">Purchase</a>
+			</div>
+		</nav>
+	</div>
+</header>			<div class="container text-center py-4 py-md-5 mt-4 mt-md-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+				<h1 class="display-3 mb-0">Changelog</h1>
+				<p class="text-white-600 lh-lg big">A summary of changes throughout our history.</p>
+				<div class="log-filters justify-content-center align-items-center text-center">
+					<button type="button" class="btn text-white" style="pointer-events: none;"><span class="badge badge-success mr-2">N</span> New</button>
+					<button type="button" class="btn text-white" style="pointer-events: none;"><span class="badge badge-warning mr-2">C</span> Changed</button>
+					<button type="button" class="btn text-white" style="pointer-events: none;"><span class="badge badge-primary mr-2">F</span> Fixed</button>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<section class="storm-section">
+				<div class="row">
+					<div class="col-md-12">
+						<!--<span class="badge badge-secondary">October 30, 2021</span>-->
+						<h2 class="display-5 mt-3">Version 1.2</h2>
+						<div class="card bg-gray-800 mt-3">
+							<div class="card-body">
+								<div class="d-flex align-items-center" style="font-weight: 600!important;">
+									<span class="badge badge-success mr-3">N</span>
+									New Menu
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 mt-3">
+						<div class="card bg-gray-800">
+							<div class="card-body">
+								<div class="d-flex align-items-center" style="font-weight: 600!important;">
+									<span class="badge badge-success mr-3">N</span>
+									New Recoil
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+				
+					<div class="col-md-12 mt-3">
+						<div class="card bg-gray-800">
+							<div class="card-body">
+								<div class="d-flex align-items-center" style="font-weight: 600!important;">
+									<span class="badge badge-primary mr-3">F</span>
+									Multiple Small Bugs
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					
+				<div class="row mt-5">
+					<div class="col-md-12">
+							<span class="badge badge-secondary">12 December, 2021</span>
+							<h2 class="display-5 mt-3">Version 1.1</h2>
+						<div class="card bg-gray-800 mt-3">
+							<div class="card-body">
+								<div class="d-flex align-items-center" style="font-weight: 600!important;">
+									<span>
+									<span class="badge badge-success mr-3">N</span>
+									</span>
+									Ghost Mode
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 mt-3">
+						<div class="card bg-gray-800">
+							<div class="card-body">
+								<div class="d-flex align-items-center" style="font-weight: 600!important;">
+									<span>
+									<span class="badge badge-success mr-3">N</span>
+									</span>
+									Optimization Improvements
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-12 mt-3">
+						<div class="card bg-gray-800">
+							<div class="card-body">
+								<div class="d-flex align-items-center" style="font-weight: 600!important;">
+									<span>
+									<span class="badge badge-primary mr-3">F</span>
+									</span>
+									Multiple Small Bugs
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			</section>
+		</div>
+		<footer class="pt-4 pt-md-5 pb-2 pb-md-4 mt-4">
+			<div class="container">
+				<hr class="my-4">
+				<div class="row">
+					<div class="col-sm-5 order-sm-2">
+						<div class="social-icons">
+							<a target="_blank" href="https://discord.gg/jUKSVP9Rgg">
+							<i class="fab fa-twitter"></i>
+							</a>
+							<a target="_blank" href="https://discord.gg/jUKSVP9Rgg">
+							<i class="fab fa-discord"></i>
+							</a>
+							<a target="_blank" href="https://discord.gg/jUKSVP9Rgg">
+							<i class="fab fa-telegram"></i>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<p class="small text-gray-600 text-center text-sm-left">2021 - 2022 © Stormtech - All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+</footer>		<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+		<script src="js/swiper-bundle.min.js" type="text/javascript"></script>
+		<script src="js/aos.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			//Stormtech AOS Animation Javascript
+			AOS.init ({
+			  offset: 0,
+			  once: true,
+			  easing: 'ease-out'
+			});
+			
+			//Stormtech Swiper Clients Slider JavaScript
+			var swiper = new Swiper('.swiper-clients', {
+			  slidesPerView: 6,
+			  spaceBetween: 20,
+			  breakpoints: {
+			    0: {
+			      slidesPerView: 2,
+			      spaceBetween: 30,
+			    },
+			    480: {
+			      slidesPerView: 3,
+			      spaceBetween: 30,
+			    },
+			    768: {
+			      slidesPerView: 4,
+			      spaceBetween: 40,
+			    },
+			    1024: {
+			      slidesPerView: 6,
+			      spaceBetween: 20,
+			    },
+			  }
+			});
+			
+			//Stormtech Swiper Single Column Slider JavaScript
+			var swiper = new Swiper('.swiper-single', {
+			  spaceBetween: 25,
+			  pagination: {
+			    el: '.swiper-pagination',
+			    clickable: true,
+			  },
+			});
+		</script>
+	
+</body></html>
